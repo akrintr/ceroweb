@@ -35,8 +35,8 @@ class Calculator extends Component{
                     {this.showOrders(orders)}
                 </ul>
                 <hr />
-                <button className="btn btn-block btn-danger title"> Confirm </button>
-                <button className="btn btn-block btn-secondary title"> Cancel </button>
+                <button className="btn btn-block btn-danger title" onClick={()=>this.props.onConfirmOrder()}> Confirm </button>
+                <button className="btn btn-block btn-secondary title" onClick={()=>this.props.onCancelOrder()}> Cancel </button>
             </div>
         );
     }
